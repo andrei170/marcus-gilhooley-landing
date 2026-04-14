@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marcus Gilhooley — Club Closer</title>
+<meta name="description" content="£2.7M closed in 2024. London to Dubai. High-ticket closing training with real agency placement pipeline.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0a0f;--bg-2:#13131d;--surface:#1e1e2d;--line:rgba(205,149,117,.15);--text:#f5ecdf;--muted:#9b8878;--rose:#cd9575;--rose-2:#d4a58a;--champagne:#e6d4a8}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.6;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(circle,rgba(205,149,117,.02) 1px,transparent 1px);background-size:28px 28px;pointer-events:none;z-index:0}
+body::after{content:'';position:fixed;top:-30%;right:-15%;width:80%;height:80%;background:radial-gradient(circle,rgba(205,149,117,.07) 0%,rgba(230,212,168,.03) 30%,transparent 60%);pointer-events:none;z-index:0}
+.container{max-width:1180px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+nav{padding:28px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(10,10,15,.94);backdrop-filter:blur(14px);z-index:100}
+.nav-inner{display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;font-size:22px;letter-spacing:-.01em}
+.logo span{background:linear-gradient(135deg,var(--rose) 0%,var(--champagne) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-cta{padding:10px 22px;background:linear-gradient(135deg,var(--rose) 0%,var(--champagne) 100%);color:#0a0a0f;border-radius:8px;text-decoration:none;font-weight:700;font-size:14px}
+section{padding:100px 0}
+.eyebrow{display:inline-block;padding:6px 14px;background:rgba(205,149,117,.08);border:1px solid rgba(205,149,117,.3);border-radius:20px;font-size:12px;font-weight:600;color:var(--rose-2);letter-spacing:.15em;text-transform:uppercase;margin-bottom:24px}
+h1{font-size:clamp(42px,6vw,76px);font-weight:800;line-height:1.03;letter-spacing:-.03em;margin-bottom:24px}
+h1 em{font-style:normal;background:linear-gradient(135deg,var(--rose) 0%,var(--champagne) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+h2{font-size:clamp(32px,4vw,48px);font-weight:700;line-height:1.15;letter-spacing:-.02em;margin-bottom:20px}
+h3{font-size:22px;font-weight:600;margin-bottom:14px}
+p{color:var(--muted);font-size:17px;max-width:680px}
+.hero{padding-top:80px;text-align:center}
+.hero p{font-size:20px;margin:0 auto 40px;max-width:720px}
+.cta-primary{display:inline-block;padding:18px 38px;background:linear-gradient(135deg,var(--rose) 0%,var(--champagne) 100%);color:#0a0a0f;text-decoration:none;border-radius:12px;font-weight:700;font-size:16px;box-shadow:0 10px 40px rgba(205,149,117,.3);transition:.2s}
+.cta-primary:hover{transform:translateY(-2px)}
+.vsl-box{max-width:900px;margin:60px auto;aspect-ratio:16/9;background:linear-gradient(135deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:16px;display:flex;align-items:center;justify-content:center;position:relative}
+.vsl-box::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at center,rgba(205,149,117,.08) 0%,transparent 60%)}
+.play-btn{width:88px;height:88px;border-radius:50%;background:rgba(205,149,117,.15);border:2px solid var(--rose);display:flex;align-items:center;justify-content:center;z-index:1}
+.play-btn svg{width:32px;height:32px;fill:var(--rose-2);margin-left:4px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin:80px 0 0;padding:40px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat-num{font-size:40px;font-weight:800;background:linear-gradient(135deg,var(--rose) 0%,var(--champagne) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.03em}
+.stat-label{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-top:6px}
+.problem-grid,.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:50px}
+.card{padding:36px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:16px;transition:.3s}
+.card:hover{border-color:rgba(205,149,117,.4);transform:translateY(-4px)}
+.card-num{font-size:14px;color:var(--rose-2);font-weight:700;letter-spacing:.15em;text-transform:uppercase;margin-bottom:16px}
+.card h3{color:var(--text)}
+.card p{font-size:15px}
+.divider{height:1px;background:linear-gradient(90deg,transparent 0%,var(--line) 50%,transparent 100%)}
+.lead-capture{background:linear-gradient(135deg,rgba(205,149,117,.08) 0%,rgba(230,212,168,.04) 100%);border:1px solid rgba(205,149,117,.2);border-radius:24px;padding:70px 60px;text-align:center;margin:80px 0}
+.lead-capture h2{max-width:640px;margin:0 auto 20px}
+.form-row{display:flex;gap:12px;max-width:520px;margin:36px auto 0}
+.form-row input{flex:1;padding:18px 22px;background:var(--bg);border:1px solid var(--line);border-radius:12px;color:var(--text);font-size:15px;font-family:inherit}
+.form-row input:focus{outline:none;border-color:var(--rose)}
+.form-row button{padding:18px 32px;background:linear-gradient(135deg,var(--rose) 0%,var(--champagne) 100%);color:#0a0a0f;border:none;border-radius:12px;font-weight:700;font-size:15px;cursor:pointer;font-family:inherit}
+.offer-box{background:linear-gradient(135deg,#10101a 0%,#1c1c28 100%);border:1px solid rgba(205,149,117,.25);border-radius:24px;padding:60px;margin-top:40px}
+.offer-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:center}
+.offer-price{font-size:44px;font-weight:800;background:linear-gradient(135deg,var(--rose) 0%,var(--champagne) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.03em;line-height:1.1}
+.offer-price small{font-size:15px;color:var(--muted);font-weight:500;-webkit-text-fill-color:var(--muted);display:block;margin-top:8px}
+.feature-list{list-style:none;margin-top:24px}
+.feature-list li{padding:12px 0;color:var(--text);display:flex;align-items:flex-start;gap:12px;font-size:15px}
+.feature-list li::before{content:'◆';color:var(--rose-2);font-weight:700;flex-shrink:0}
+.bio{display:grid;grid-template-columns:1fr 1.5fr;gap:60px;align-items:center}
+.bio-img{aspect-ratio:4/5;background:linear-gradient(135deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:20px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px}
+.faq-item{border-bottom:1px solid var(--line);padding:24px 0;cursor:pointer}
+.faq-q{display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:18px;color:var(--text)}
+.faq-plus{width:24px;height:24px;position:relative;flex-shrink:0}
+.faq-plus::before,.faq-plus::after{content:'';position:absolute;background:var(--rose-2);top:50%;left:50%;transition:.3s}
+.faq-plus::before{width:14px;height:2px;transform:translate(-50%,-50%)}
+.faq-plus::after{width:2px;height:14px;transform:translate(-50%,-50%)}
+.faq-item.open .faq-plus::after{transform:translate(-50%,-50%) rotate(90deg);opacity:0}
+.faq-a{max-height:0;overflow:hidden;transition:.3s}
+.faq-item.open .faq-a{max-height:300px;padding-top:14px}
+.footer{padding:60px 0;border-top:1px solid var(--line);text-align:center}
+.footer p{margin:0 auto;font-size:14px}
+@media(max-width:768px){.problem-grid,.pillar-grid,.stats{grid-template-columns:1fr}.offer-grid,.bio{grid-template-columns:1fr}.lead-capture,.offer-box{padding:40px 24px}.form-row{flex-direction:column}section{padding:70px 0}.stats{gap:20px;grid-template-columns:repeat(2,1fr)}}
+.reveal{opacity:0;transform:translateY(30px);transition:.8s}
+.reveal.in{opacity:1;transform:translateY(0)}
+</style></head><body>
+<nav><div class="container nav-inner"><div class="logo">CLUB <span>CLOSER</span></div><a href="#apply" class="nav-cta">Apply</a></div></nav>
+<section class="hero"><div class="container">
+<div class="eyebrow reveal">LONDON → DUBAI · £2.7M IN 2024</div>
+<h1 class="reveal">Train As A Closer. <em>Placed Through My Own Agency.</em></h1>
+<p class="reveal">The only closer training program that places top students into its own digital marketing agency (The Click Club) before sending anyone to the partner network. Real pipeline, not a job board.</p>
+<div class="vsl-box reveal"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+<a href="#apply" class="cta-primary reveal">Apply For Club Closer →</a>
+<div class="stats reveal">
+<div><div class="stat-num">£2.7M</div><div class="stat-label">Closed In 2024</div></div>
+<div><div class="stat-num">$320K</div><div class="stat-label">Peak Month</div></div>
+<div><div class="stat-num">4.8/5</div><div class="stat-label">Trustpilot</div></div>
+<div><div class="stat-num">87K</div><div class="stat-label">Community</div></div>
+</div>
+</div></section>
+<div class="divider"></div>
+<section><div class="container">
+<div class="eyebrow reveal">THE PROBLEM</div>
+<h2 class="reveal">Most Closer Programs<br>Train You Then Leave You Alone</h2>
+<p class="reveal" style="font-size:18px">Training without real pipeline is theory. The money happens when you're placed.</p>
+<div class="problem-grid">
+<div class="card reveal"><div class="card-num">ISSUE 01</div><h3>Theory Without Pipeline</h3><p>Most programs teach you to close, then hand you a Slack channel with occasional job postings. Not a pipeline. A waiting list.</p></div>
+<div class="card reveal"><div class="card-num">ISSUE 02</div><h3>No Ongoing Coaching</h3><p>You get placed, you're on your own. Deals you lose don't get debriefed. Mistakes compound.</p></div>
+<div class="card reveal"><div class="card-num">ISSUE 03</div><h3>Lifestyle Misalignment</h3><p>Corporate sales jobs kill lifestyle. Remote closing can unlock location freedom — if the training includes the life, not just the script.</p></div>
+</div>
+</div></section>
+<div class="divider"></div>
+<section><div class="container">
+<div class="eyebrow reveal">THE 3-TIER PIPELINE</div>
+<h2 class="reveal">Trained Here. Placed Here. Supported Here.</h2>
+<div class="pillar-grid">
+<div class="card reveal"><div class="card-num">TIER 1 · FIRST</div><h3>The Click Club</h3><p>My own digital marketing agency. Top students join our sales team first. Market-rate commissions. If they perform, they stay.</p></div>
+<div class="card reveal"><div class="card-num">TIER 2 · PARTNER NETWORK</div><h3>40+ Hiring Businesses</h3><p>Six years of partner relationships. They pay referral fees to hire Club Closer graduates. Students get first pick.</p></div>
+<div class="card reveal"><div class="card-num">TIER 3 · OPEN MARKET</div><h3>Support + Intros</h3><p>Students who don't fit Tier 1 or 2 get my scripts, direct introductions to hiring businesses, and ongoing coaching.</p></div>
+</div>
+</div></section>
+<div class="divider"></div>
+<section><div class="container">
+<div class="lead-capture reveal">
+<div class="eyebrow">FREE GUIDE</div>
+<h2>The Closer's Tonality Masterclass</h2>
+<p style="margin:0 auto">The 15-page PDF on tonality — the single skill that separates $10K closers from $50K closers. Includes audio examples.</p>
+<form class="form-row" onsubmit="event.preventDefault();alert('Check your inbox — guide sent.')">
+<input type="email" placeholder="Enter your email" required><button type="submit">Send It →</button>
+</form>
+</div>
+</div></section>
+<div class="divider"></div>
+<section id="apply"><div class="container">
+<div class="eyebrow reveal">THE ACADEMY</div>
+<h2 class="reveal">Club Closer Academy</h2>
+<div class="offer-box reveal"><div class="offer-grid">
+<div>
+<div class="offer-price">Application Based<small>Payment plans · Placement-tier structured</small></div>
+<p style="margin-top:16px">Investment discussed on qualification call. Payment plans standard. Access to all three placement tiers depending on performance and fit.</p>
+<ul class="feature-list">
+<li>4-week intensive closing training</li>
+<li>Tonality masterclass with call recording reviews</li>
+<li>Objection library (50+ objections)</li>
+<li>Pipeline + CRM discipline systems</li>
+<li>Tier 1: Click Club agency priority placement</li>
+<li>Tier 2: Partner network access (40+ businesses)</li>
+<li>Tier 3: Direct introductions + market scripts</li>
+<li>6 one-on-one coaching sessions included</li>
+<li>Weekly live training (2+ hours) with Club Closer team</li>
+<li>Lifestyle + relocation resources for advanced students</li>
+</ul>
+</div>
+<div><div style="background:rgba(205,149,117,.08);border:1px solid rgba(205,149,117,.2);border-radius:16px;padding:32px;text-align:center">
+<div class="eyebrow">PROOF</div>
+<h3 style="margin-bottom:12px">Sam. Manchester.<br>Bartender → £10K/Mo.</h3>
+<p style="margin:0 auto 24px">£2,100/mo bartending before joining. Month 5 — £10,200 in closing commissions. Month 6 — moved out, bought his first car.</p>
+<a href="#" class="cta-primary" style="width:100%">Apply Now →</a>
+</div></div>
+</div></div>
+</div></section>
+<div class="divider"></div>
+<section><div class="container">
+<div class="bio">
+<div class="bio-img reveal">[Marcus's photo]</div>
+<div class="reveal">
+<div class="eyebrow">ABOUT MARCUS</div>
+<h2>£2.7M Closed. London → Dubai.</h2>
+<p style="font-size:17px;margin-top:20px">Quit my corporate London job at 24 after shadowing a friend close £23K in a single Saturday. Six years later I closed £2.7M in 2024 and peaked at $320K months. Founded The Click Club (digital marketing agency) in 2020 and Club Closer (closer training) to teach what I'm still doing.</p>
+<p style="margin-top:16px">Based in Dubai. Operating both businesses. The training I teach is the same system I use to close deals every single week. It's not theory. It's the playbook.</p>
+</div>
+</div>
+</div></section>
+<div class="divider"></div>
+<section><div class="container" style="max-width:820px">
+<div class="eyebrow reveal">FAQ</div>
+<h2 class="reveal">Common Questions</h2>
+<div style="margin-top:40px">
+<div class="faq-item reveal" onclick="this.classList.toggle('open')"><div class="faq-q"><span>How does the Click Club placement work?</span><div class="faq-plus"></div></div><div class="faq-a"><p>Top students complete the 4-week training and interview for our own agency sales team. If we have openings and they're a fit, they join us. This is paid market-rate commissions (8-12% of deal value). We pay referral fees internally so the economics make sense.</p></div></div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')"><div class="faq-q"><span>What if I'm not placed with Click Club?</span><div class="faq-plus"></div></div><div class="faq-a"><p>Tier 2 (partner network) and Tier 3 (open market with support) are your paths. Most students who put in the reps land a Tier 2 role within 60-90 days.</p></div></div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')"><div class="faq-q"><span>Is this UK-only?</span><div class="faq-plus"></div></div><div class="faq-a"><p>No. Global. UK students get extra attention because the market's my origin. We place across US, UK, EU, and Middle East regularly.</p></div></div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')"><div class="faq-q"><span>Do I need sales experience?</span><div class="faq-plus"></div></div><div class="faq-a"><p>No. Most of my students have zero sales experience. The training is designed for beginners — tonality, scripts, objection handling, pipeline discipline all taught from scratch.</p></div></div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')"><div class="faq-q"><span>Who is this NOT for?</span><div class="faq-plus"></div></div><div class="faq-a"><p>Anyone wanting a passive income shortcut. Closing is active work. The income is great; the work is real.</p></div></div>
+</div>
+</div></section>
+<section style="text-align:center"><div class="container">
+<h2 class="reveal">Ready To Close For A Living?</h2>
+<p class="reveal" style="margin:20px auto 40px">Apply below. My team reviews every application.</p>
+<a href="#apply" class="cta-primary reveal">Apply Now →</a>
+</div></section>
+<footer class="footer"><div class="container"><p>© 2026 Club Closer · Dubai</p></div></footer>
+<script>const obs=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('in')),{threshold:.1});document.querySelectorAll('.reveal').forEach(e=>obs.observe(e));</script>
+</body></html>
